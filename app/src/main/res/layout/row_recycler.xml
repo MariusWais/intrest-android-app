@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:baselineAligned="false"
+    android:id="@+id/rl">
+    <Button
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:textSize="5dp"
+        android:id="@+id/recyclerButton"
+        android:background="@mipmap/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="10dp"
+        android:layout_marginRight="20dp"
+
+        />
+    <LinearLayout
+     android:layout_width="0dp"
+     android:layout_height="0dp"
+     android:layout_alignParentTop="true"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true"><WebView
+     android:layout_width="0dp"
+     android:layout_height="0dp"
+     android:id="@+id/webView"
+     ></WebView></LinearLayout>
+
+ <Button
+        android:text="Share"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+        android:id="@+id/shareButton"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignBaseline="@+id/headline"
+        android:layout_alignBottom="@+id/headline"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="getData"
+       />
+
+ <TextView
+        android:text="The American"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:id="@+id/source"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp" />
+
+ <TextView
+        android:text="Random headline about Donald Trump"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:id="@+id/headline"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/source"
+        android:layout_alignLeft="@+id/source"
+        android:layout_alignStart="@+id/source" />
+
+ <View
+     android:layout_width="wrap_content"
+     android:layout_height="2dp"
+     android:background="@color/theGrey"
+     android:id="@+id/view2"
+     android:layout_below="@+id/headline"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true"
+     android:layout_marginTop="11dp">
+ </View>
+
+ <View
+     android:layout_width="wrap_content"
+     android:layout_height="30px"
+     android:background="#222222"
+     android:id="@+id/view"
+     android:layout_below="@+id/view2"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true" />
+
+</RelativeLayout>

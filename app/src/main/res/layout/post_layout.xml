@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/logobar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/include2"></include>
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom = "true"
+        android:id="@+id/include3"></include>
+
+    <TextView
+        android:text="Share your Intrests"
+        android:layout_width="222dp"
+        android:gravity="center"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/include2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="16dp"
+        android:hint="Source"
+        android:id="@+id/new_source"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/new_headline"
+        android:layout_alignLeft="@+id/new_headline"
+        android:layout_alignStart="@+id/new_headline" />
+
+    <EditText
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="16dp"
+        android:hint="Headline"
+        android:layout_marginTop="47dp"
+        android:id="@+id/new_headline"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="URL"
+        android:textSize="16dp"
+        android:ems="10"
+        android:id="@+id/new_link"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/new_source"
+        android:layout_alignLeft="@+id/new_source"
+        android:layout_alignStart="@+id/new_source" />
+
+    <Button
+        android:text="Post"
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:id="@+id/postButton"
+        android:onClick="addPost"
+        android:layout_below="@+id/new_link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+</android.support.percent.PercentRelativeLayout>

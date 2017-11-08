@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        layout="@layout/logobar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/include4"></include>
+
+    <EditText
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        app:layout_marginTopPercent="50%"
+        android:id="@+id/new_user_pass"
+        android:hint="Password"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:ems="10"
+        android:id="@+id/new_user_name"
+        app:layout_marginTopPercent="40%"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Sign in!"
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="65%"
+        android:id="@+id/button3"
+        android:textAllCaps="false"
+        android:onClick="userReg"/>
+
+    <Button
+        android:text="Already registered?"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:id="@+id/register_button"
+        android:onClick="getToLogin"
+        android:textSize="12dp"
+        android:textAllCaps="false"
+        app:layout_marginTopPercent="74%"
+        android:layout_centerHorizontal="true"
+        android:background="?android:colorBackground"
+        style="?android:attr/borderlessButtonStyle"
+        android:gravity="center" />
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"></include>
+
+    <TextView
+        android:text="Registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="20%"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:id="@+id/textView2" />
+
+    <EditText
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:textSize="16dp"
+        android:ems="10"
+        app:layout_marginTopPercent="30%"
+        android:id="@+id/name"
+        android:layout_centerHorizontal="true" />
+
+
+</android.support.percent.PercentRelativeLayout>
